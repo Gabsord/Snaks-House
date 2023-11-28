@@ -1,0 +1,40 @@
+.Products{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    padding: 10px 10px 0;
+    margin-top: 20px;
+    
+    
+}
+
+.productsContainer{
+    width: 100%;
+    max-width: 1840px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.productsContainer h1 {
+    font-family:'Agbalumo',sans-serif;
+    font-weight: 400;
+}
+
+.productsGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap: 30px;
+    
+}
+
+@media (max-width:720px) {
+    .productsGrid{
+        gap: 10px;
+    }
+    
+}
+

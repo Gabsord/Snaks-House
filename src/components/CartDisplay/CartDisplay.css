@@ -1,0 +1,67 @@
+.cartBoard{
+    width: 100%;
+    padding: 100px 10px 0;
+    height: 100vh; 
+   
+}
+
+.cartBoardContainer{
+    width: 100%;
+    max-width: 1200px;
+    max-height: 100%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cartItens{
+    width: 100%;
+    height: 600px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+    &&::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.cartBoardContainer > h3 {
+    margin-bottom: 20px;
+    font-family:'Agbalumo',sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+  
+
+}
+
+.totalValue{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 30px 0;  
+    font-size: 1.4rem;
+}
+
+.totalValue h2{
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+@media(max-width:900px){
+    .cartBoard{
+        padding: 100px 0 0 0;
+    }
+
+    .cartItens{
+        height: 500px;
+    }
+
+}
+
+

@@ -1,0 +1,81 @@
+.sideMenu{
+    position: fixed;
+    left: -100%;
+    top:0 ;
+    bottom: 0;
+    padding: 10px;
+    background-color:#ac2929;
+    color: #fff;
+    font-weight: 400;
+    width: 300px;
+    height: 100vh;
+    z-index: 1;
+    transition: all .4s ease;
+}
+.sideMenuContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.sideMenuCloseBtn{
+    position: absolute;
+    top:2.5%;
+    right: 10%;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.Logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.Logo > h3,span {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.menuItens{
+    list-style: none;
+    padding-top:50px;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menuItem{
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.menuItem > li {
+    display: flex;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    gap: 10px;
+}
+
+
+.showSideMenu{
+    left: 0;
+}
+
+
+@media (max-width:500px) {
+    .sideMenu{
+        width: 100vw;
+    }
+    .sideMenuContainer{
+        align-items: center;
+    }
+
+}

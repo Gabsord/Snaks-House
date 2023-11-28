@@ -1,0 +1,145 @@
+.cartItem{
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.cartItemContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cartItemDetails{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    gap: 15px;
+   
+}
+
+.Name-Img{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+
+}
+
+
+.Name-Img p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.Name-Img img {
+    height: 70px;
+    min-width: 120px;
+    border-radius: 5px;
+    object-fit: cover;
+
+}
+
+.cartItemBtns{
+    width:25% ;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.cartItemBtns > div{
+    width: 125px;
+    border-radius: 80px;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cartItemBtns >div> button {
+    width: 41.6%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cartItemPrice{
+    width: 25%;
+    font-size: 1.3rem;
+
+}
+
+.cartItemDeleteBtn{
+    position: absolute;
+    right: 0;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    color: #831010;
+    cursor: pointer;
+}
+
+@media (max-width:950px) { 
+    .cartItemDetails{
+       padding: 0;
+    }
+   
+}
+
+@media (max-width:720px) {
+    .Name-Img{
+        min-width:250px;
+    
+    }
+
+    .cartItemDeleteBtn{
+        top: 0;
+        font-size: 1rem;
+
+    }
+
+    .cartItemPrice{
+        font-size: 1rem;
+    }
+   
+}
+
+@media (max-width:550px) {
+
+
+    .Name-Img{
+        min-width:150px;
+        gap: 20px;
+
+    }
+
+    .Name-Img img {
+        min-width: 70px;
+        height: 50px; 
+    }
+
+    .Name-Img p{
+        font-size: .8rem;
+    }
+
+    .cartItemBtns{
+        width:20% ;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+   
+
+    }
+   
+   
+}

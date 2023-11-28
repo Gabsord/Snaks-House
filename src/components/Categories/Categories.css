@@ -1,0 +1,56 @@
+.categories{
+    width: 100%;
+    padding: 30px 10px ;
+    
+
+}
+
+.categoriesContainer{
+    width: 100%;
+    max-width:1840px ;
+    margin: auto;
+}
+
+.categorieGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+    gap: 20px;   
+}
+
+.categorieItem{
+    background-color:#b13b3b;
+    color: #fff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: auto;
+    transition: all .3s ease;
+
+    &&:hover{
+        transform: scale(1.1);
+    }
+}
+
+.categorieItem p {
+    font-family:'Agbalumo',sans-serif;
+    width: 50%;
+}
+
+.categorieImg{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.categorieImg img{
+    width: 70px;
+    height: 100%;
+    object-fit: cover;
+}
